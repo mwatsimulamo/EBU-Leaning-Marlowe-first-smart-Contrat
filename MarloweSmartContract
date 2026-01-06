@@ -1,0 +1,26 @@
+When
+    [Case
+        (Deposit
+            (Role "Olivier")
+            (Role "Olivier")
+            (Token "" "ADA")
+            (Constant 2000)
+        )
+        (When
+            [Case
+                (Deposit
+                    (Role "Mwatsimulamo")
+                    (Role "Mwatsimulamo")
+                    (Token "" "ADA")
+                    (Constant 1500)
+                )
+                (Pay
+                    (Role "Olivier")
+                    (Party (Role "Mwatsimulamo"))
+                    (Token "" "ADA")
+                    (Constant 2000)
+                    Close 
+                )]
+            1767816900000 Close 
+        )]
+    1767816720000 Close 
